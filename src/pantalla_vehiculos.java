@@ -72,7 +72,7 @@ public class pantalla_vehiculos {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame frame = new JFrame("Busqueda de vehiculos");
-                frame.setSize(600, 700);
+                frame.setSize(600, 500);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setContentPane(new buscar(frame).buscar_ve);
                 frame.pack();

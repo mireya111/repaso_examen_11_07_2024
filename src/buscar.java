@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -40,6 +41,9 @@ public class buscar {
                         Cilindra.setText("Cilindraje: "+resultado.getString("cilindraje"));
                         combusti.setText("Tipo de combustible: "+resultado.getString("tipo_combustible"));
                         color.setText("Color: "+resultado.getString("color"));
+                        frame1.setPreferredSize(new Dimension(500,600));
+                        frame1.pack();
+                        frame1.setLocationRelativeTo(null);
                     } else {
                         informacion.setText("El vehiculo no existe");
                     }
